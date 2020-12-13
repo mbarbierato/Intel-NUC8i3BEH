@@ -12,7 +12,7 @@ EFI for Intel NUC8i3BEH with OpenCore 0.6.4 bootloader
 | iGPU             | Intel® Iris® Plus 655                  |
 | Lan              | Intel I219-V                           |
 | Audio            | Realtek ALC235                         |
-| Ram              | 18 Gb ddr4 2400 Mhz                    |
+| Ram              | 32 Gb ddr4 2400 Mhz                    |
 | Wifi + Bluetooth | Intel® Wireless-AC 9560 + Bluetooth 5.0|
 | Nvme             | Samsung 970 evo plus 500GB             |
 | SSD              | Samsung 850 evo 500 GB                 |

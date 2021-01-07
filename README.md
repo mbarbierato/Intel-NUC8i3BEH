@@ -29,6 +29,7 @@ EFI for Intel NUC8i3BEH with OpenCore 0.6.4 bootloader
 ![infogpu](./Screenshot/hackintooligpu.png)
 ![usbmap](./Screenshot/mapusb.png)
 ![infopci](./Screenshot/PCISEZ.png)
+![thunderbolt](./Screenshot/thunderbolt.png)
 
 ### What works and What doesn't or WIP:
 

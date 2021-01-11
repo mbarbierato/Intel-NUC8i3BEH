@@ -1,6 +1,6 @@
 # Intel NUC8i3BEH Hackintosh
 
-EFI for Intel NUC8i3BEH with OpenCore 0.6.4 bootloader
+EFI for Intel NUC8i3BEH with OpenCore 0.6.5 bootloader
 
 ![descrizione](./Screenshot/pc.png)
 

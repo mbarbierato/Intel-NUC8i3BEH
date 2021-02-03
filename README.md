@@ -6,7 +6,7 @@
 
 # Intel NUC8i3BEH Hackintosh
 
-EFI for Intel NUC8i3BEH with OpenCore 0.6.5 bootloader
+EFI for Intel NUC8i3BEH with OpenCore 0.6.6 bootloader
 
 ![descrizione](./Screenshot/pc.png)
 
@@ -77,10 +77,7 @@ See [ioreg](./macminik.ioreg) for more clarification
 
 - [Apple](https://apple.com) for macOS;
 - [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
-- [Dortania](https://github.com/dortania)
-- [mald0n](https://github.com/MaLd0n)
-- [rehabman](https://github.com/RehabMan)
-- [daliansky](https://github.com/daliansky)
-- [Hackintoshlifeit](https://github.com/Hackintoshlifeit)
+- [Dortania](https://github.com/dortania) For great and detailed guides.
+- [Hackintoshlifeit](https://github.com/Hackintoshlifeit) Support group for installation and post installation.
 
 # If you need help please contact us on [Telegram](https://t.me/HackintoshLife_it) or [Web](https://www.hackintoshlife.it/)

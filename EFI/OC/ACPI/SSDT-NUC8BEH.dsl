@@ -138,33 +138,38 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
 
         Scope (PCI0)
         {
-            Device (RTC0)
+             Device (MCHC)
             {
-                Name (_HID, EisaId ("PNP0B00") /* AT Real-Time Clock */)  // _HID: Hardware ID
-                Name (_CRS, ResourceTemplate ()  // _CRS: Current Resource Settings
+                Name (_ADR, Zero)  // _ADR: Address
+            }
+
+            Device (SBUS.BUS0)
+            {
+                Name (_CID, "smbus")  // _CID: Compatible ID
+                Name (_ADR, Zero)  // _ADR: Address
+                Device (DVL0)
                 {
-                    IO (Decode16,
-                        0x0070,             // Range Minimum
-                        0x0070,             // Range Maximum
-                        0x01,               // Alignment
-                        0x08,               // Length
-                        )
-                    IRQNoFlags ()
-                        {8}
-                })
-                Method (_STA, 0, NotSerialized)  // _STA: Status
-                {
-                    If (_OSI ("Darwin"))
+                    Name (_ADR, 0x57)  // _ADR: Address
+                    Name (_CID, "diagsvault")  // _CID: Compatible ID
+                    Method (_DSM, 4, NotSerialized)  // _DSM: Device-Specific Method
                     {
-                        Return (0x0F)
-                    }
-                    Else
-                    {
-                        Return (Zero)
+                        If (!Arg2)
+                        {
+                            Return (Buffer (One)
+                            {
+                                 0x57                                             // W
+                            })
+                        }
+
+                        Return (Package (0x02)
+                        {
+                            "address", 
+                            0x57
+                        })
                     }
                 }
             }
-
+            
             Scope (RP05)
             {
                 Method (OHPE, 0, NotSerialized)
@@ -4390,15 +4395,12 @@ DefinitionBlock ("", "SSDT", 2, "HACK", "HackLife", 0x00000000)
 
     Scope (\)
     {
-        If (_OSI ("Darwin"))
+                Method (_INI, 0, NotSerialized)  // _INI: Initialize
         {
-            \_SB.PCI0.LPCB.H_EC._STA = Zero
-            If (CondRefOf (\_SB.PCI0.LPCB.RTC._STA))
+            If (_OSI ("Darwin"))
             {
                 STAS = One
             }
-
-            \_SB.PCI0.LPCB.MATH._STA = 0x0F
         }
 
         Method (OSDW, 0, NotSerialized)

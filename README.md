@@ -67,7 +67,6 @@ These settings are important but are already set as needed by "Load Defaults"
 
 - Usb port mapping performed
 - Disabled unused device
-- Patch Thunderbolt Firmware
 
 ### SSDT Info
 ![ssdt](./Screenshot/ssdtscreen.png)
@@ -76,10 +75,12 @@ See [ioreg](./macminik.ioreg) for more clarification
 
 ## Credits
 
-- [Apple](https://apple.com) for macOS;
+- [Apple](https://apple.com) for macOS.
+- [Intel](https://www.intel.it/content/www/it/it/products/details/nuc.html) for this mini pc.
 - [Acidanthera](https://github.com/acidanthera) for OpenCore and all the lovely hackintosh work.
 - [Dortania](https://github.com/dortania) For great and detailed guides.
-- [Osy](https://github.com/osy) For Thunderbolt Patcher
+- [Lorys89](https://github.com/Lorys89) For continuos support, patches and sleepless nights.
 - [Hackintoshlifeit](https://github.com/Hackintoshlifeit) Support group for installation and post installation.
+
 
 ### If you need help please contact us on [Telegram](https://t.me/HackintoshLife_it)

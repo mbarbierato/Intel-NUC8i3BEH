@@ -6,7 +6,7 @@
 
 # Intel NUC8i3BEH Hackintosh
 
-EFI for Intel NUC8i3BEH with OpenCore 0.6.6 bootloader
+EFI for Intel NUC8i3/i5/i7 BEH/BEK with OpenCore bootloader
 
 ![descrizione](./Screenshot/pc.png)
 
@@ -66,7 +66,6 @@ These settings are important but are already set as needed by "Load Defaults"
 ### Special Config:
 
 - Usb port mapping performed
-- Disabled unused device
 
 ### SSDT Info
 ![ssdt](./Screenshot/ssdtscreen.png)
